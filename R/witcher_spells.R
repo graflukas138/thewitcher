@@ -1,6 +1,6 @@
 #' 'The Witcher' colour map
 #'
-#' A dataset containing the colour palettes from the TV show 'The Witcher'.
+#' A dataset containing the colour palettes from the TV show, book series and video games of 'The Witcher'.
 #'
 #'
 #'@format A data frame containing all the colours used in the palette:
@@ -8,7 +8,7 @@
 #'   \item V1: Red value
 #'   \item V2: Green value
 #'   \item V3: Blue value
-#'   \item option: Refers to the characters of the world of the Witcher, or other colourmaps. It is intended to be a general option for choosing the specific colour palette.
+#'   \item option: Refers to the characters of the world of the Witcher.
 #'}
 "witcher.map"
 
@@ -38,21 +38,6 @@
 #' codes. This can be used either to create a user-defined color palette for
 #' subsequent graphics by \code{palette(cv)}, a \code{col =} specification in
 #' graphics functions or in \code{par}.
-#'
-#' @author Alejandro Jiménez Rico \email{aljrico@@gmail.com}, \href{https://aljrico.github.io}{Personal Blog}
-#'
-#' @details
-#'
-#' \if{html}{Here are the color scales:
-#'
-#'   \out{<div style="text-align: center">}\figure{witcher-scales.png}{houses: style="width:750px;max-width:90\%;"}\out{</div>}
-#'
-#'   }
-#' \if{latex}{Here are the color scales:
-#'
-#'   \out{\begin{center}}\figure{witcher-scales.png}\out{\end{center}}
-#'   }
-#'
 #'
 #' Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
 #' devices: see \code{\link[grDevices]{rgb}}.
@@ -234,8 +219,6 @@ witcher <- witcher
 #'
 #' @rdname scale_witcher
 #'
-#' @author Alejandro Jiménez Rico \email{aljrico@@gmail.com}
-#'
 #' @importFrom ggplot2 scale_fill_gradientn scale_color_gradientn discrete_scale
 #'
 #' @importFrom gridExtra grid.arrange
@@ -283,12 +266,28 @@ scale_fill_witcher_d <- function(..., alpha = 1, begin = 0, end = 1,
 }
 
 #' @rdname witcher_palette_names
+#' Access raw palette data
+#'
+#' These functions gives access to the data underlying the palettes
+#'
+#' @aliases witcher_palette_names
 #' @export
 
 witcher_palette_names <- function() names(witcher_palettes)
 
 #' @rdname witcher_colors
+#' @aliases witcher_colors
+#' #' This is a simple function to show a gradient of the different palettes
+#'
+#' @param palettes One or more palette names to show
+#'
+#'
+#' @importFrom grDevices n2mfrow
+#' @importFrom graphics image par text
 #' @export
+#'
+#' @examples
+
 
 witcher_colors <- function(palettes = witcher_palettes()) {
   dims <- n2mfrow(length(witcher_palettes))
