@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# theWitcher <img src="man/figures/logo.png" align="right" width="120" />
+# thewitcher <img src="man/figures/logo.png" align="right" width="120" />
 
 <!-- badges: start -->
 
@@ -16,7 +16,7 @@ downloads](http://cranlogs.r-pkg.org/badges/grand-total/thewitcher?color=yellowg
 This is a package designed to implement color palettes inspired by the
 TV Show, book series and video games *The Witcher* into `R` and
 `ggplot2`.  
-The packages draws some inspiration from the `gameofthrones`-package.  
+The package draws some inspiration from the `gameofthrones`-package.  
 Most color palettes are inspired by the 3rd installation of the video
 games: *The Witcher III - Wild Hunt*
 
@@ -37,7 +37,7 @@ install.packages("thewitcher")
 
 ## Palettes
 
-`theWitcher` provides 30 different palettes. An overview can be viewed
+`thewitcher` provides 30 different palettes. An overview can be viewed
 with the `witcher_colors()` function:
 
 ``` r
@@ -89,7 +89,7 @@ image(volcano, col = pal)
 
 ## ggplot2
 
-`theWitcher` provides color scales and functions to use with
+`thewitcher` provides color scales and functions to use with
 `ggplot2`.  
 If `ggplot2` is available you’ll have access to the
 `scale_[colour|fill]_witcher()` functions:
