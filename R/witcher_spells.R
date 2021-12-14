@@ -42,20 +42,6 @@
 #' Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
 #' devices: see \code{\link[grDevices]{rgb}}.
 #'
-#' @examples
-#' library(ggplot2)
-#' library(hexbin)
-#'
-#' dat <- data.frame(x = rnorm(1e4), y = rnorm(1e4))
-#'
-#' ggplot(dat, aes(x = x, y = y)) +
-#'   geom_hex() + coord_fixed() +
-#'   scale_fill_gradientn(colours = witcher(128, option = "targaryen")) +
-#'   theme_minimal()
-#'
-#' pal <- witcher(256, option = "Wildfire")
-#' image(volcano, col = pal)
-#'
 
 #' @rdname witcher
 #'
@@ -273,8 +259,6 @@ witcher_palette_names <- function() names(witcher_palettes)
 
 #' @rdname witcher
 #' @aliases witcher_colors
-#' @importFrom grDevices n2mfrow
-#' @importFrom graphics image par text
 #' @export
 
 
