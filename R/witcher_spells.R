@@ -22,12 +22,12 @@
 #'
 #' @param n The number of colors (\eqn{\ge 1}) to be in the palette.
 #'
-#' @param alpha	The alpha transparency, a number in [0,1], see argument alpha in
+#' @param alpha	The alpha transparency, a number in from 0 to 1, see argument alpha in
 #' \code{\link[grDevices]{hsv}}.
 #'
-#' @param begin The (corrected) hue in [0,1] at which the witcher colormap begins.
+#' @param begin The (corrected) hue in from 0 to 1 at which the witcher colormap begins.
 #'
-#' @param end The (corrected) hue in [0,1] at which the witcher colormap ends.
+#' @param end The (corrected) hue in from 0 to 1 at which the witcher colormap ends.
 #'
 #' @param direction Sets the order of colors in the scale. If 1, the default, colors
 #' are ordered from darkest to lightest. If -1, the order of colors is reversed.
@@ -70,7 +70,7 @@ witcherMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, op
   option <- tolower(option)
 
   if (begin < 0 | begin > 1 | end < 0 | end > 1) {
-    stop("begin and end must be in [0,1]")
+    stop("begin and end must be in from 0 to 1")
   }
 
   if (abs(direction) != 1) {
@@ -102,7 +102,7 @@ witcher <- function(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "G
   option <- tolower(option)
 
   if (begin < 0 | begin > 1 | end < 0 | end > 1) {
-    stop("begin and end must be in [0,1]")
+    stop("begin and end must be in from 0 to 1")
   }
 
   if (abs(direction) != 1) {
@@ -202,9 +202,9 @@ witcher <- witcher
 #'
 #' @param alpha pass through parameter to \code{witcher}
 #'
-#' @param begin The (corrected) hue in [0,1] at which the witcher colormap begins.
+#' @param begin The (corrected) hue in from 0 to 1 at which the witcher colormap begins.
 #'
-#' @param end The (corrected) hue in [0,1] at which the witcher colormap ends.
+#' @param end The (corrected) hue in from 0 to 1 at which the witcher colormap ends.
 #'
 #' @param direction Sets the order of colors in the scale. If 1, the default, colors
 #' are as output by \code{witcher_pal}. If -1, the order of colors is reversed.
@@ -262,12 +262,22 @@ scale_fill_witcher_d <- function(..., alpha = 1, begin = 0, end = 1,
   )
 }
 
+#' Show all available palettes and their respective values
+#'
+#' @keywords internal
+#'
 #' @rdname witcher
 #' @aliases witcher_palette_names
 #' @export
 
 witcher_palette_names <- function() names(witcher_palettes)
 
+#' Show the different witcher palettes
+#'
+#' A simple function that returns a plot of all available palettes in the `theWitcher` - package
+#'
+#' @param palettes one or more palettes to show
+#'
 #' @rdname witcher
 #' @aliases witcher_colors
 #' @export

@@ -30,17 +30,19 @@ witcher_colors(palettes = witcher_palettes())
 \arguments{
 \item{n}{The number of colors (\eqn{\ge 1}) to be in the palette.}
 
-\item{alpha}{The alpha transparency, a number in \link{0,1}, see argument alpha in
+\item{alpha}{The alpha transparency, a number in from 0 to 1, see argument alpha in
 \code{\link[grDevices]{hsv}}.}
 
-\item{begin}{The (corrected) hue in \link{0,1} at which the witcher colormap begins.}
+\item{begin}{The (corrected) hue in from 0 to 1 at which the witcher colormap begins.}
 
-\item{end}{The (corrected) hue in \link{0,1} at which the witcher colormap ends.}
+\item{end}{The (corrected) hue in from 0 to 1 at which the witcher colormap ends.}
 
 \item{direction}{Sets the order of colors in the scale. If 1, the default, colors
 are ordered from darkest to lightest. If -1, the order of colors is reversed.}
 
 \item{option}{A character string indicating the colourmap to use. It is not case-sensible}
+
+\item{palettes}{one or more palettes to show}
 }
 \value{
 \code{witcher} returns a character vector, \code{cv}, of color hex
@@ -56,6 +58,8 @@ channels of \code{n} equally spaced colors along the 'The Witcher' colour map.
 \description{
 This function creates a vector of \code{n} equally spaced colors along the
 'witcher colour map'.
+
+A simple function that returns a plot of all available palettes in the \code{theWitcher} - package
 }
 \examples{
 
@@ -77,3 +81,4 @@ Lukas Graf \email{graflukas57@gmail.com}
 Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
 devices: see \code{\link[grDevices]{rgb}}.
 }
+\keyword{internal}

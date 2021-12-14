@@ -2,7 +2,13 @@ library(tidyverse)
 
 map <- list()
 
-# Define Palettes
+#' Complete list of palettes
+#'
+#' Use \code{\link{witcher}} to construct palettes of desired length.
+#'
+#' @export
+#'
+
 witcher_palettes <- list(
   aard = c("#000000","#154d47", "goldenrod3", "goldenrod1"),
   axi =  c("#000000", "#4e0002", "#9D0005", "darkgreen", "lightgreen"),

@@ -74,9 +74,9 @@ scale_fill_witcher_d(
 
 \item{alpha}{pass through parameter to \code{witcher}}
 
-\item{begin}{The (corrected) hue in \link{0,1} at which the witcher colormap begins.}
+\item{begin}{The (corrected) hue in from 0 to 1 at which the witcher colormap begins.}
 
-\item{end}{The (corrected) hue in \link{0,1} at which the witcher colormap ends.}
+\item{end}{The (corrected) hue in from 0 to 1 at which the witcher colormap ends.}
 
 \item{direction}{Sets the order of colors in the scale. If 1, the default, colors
 are as output by \code{witcher_pal}. If -1, the order of colors is reversed.}
