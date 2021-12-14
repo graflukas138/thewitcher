@@ -4,7 +4,7 @@
 # theWitcher <img src="man/figures/logo.png" align="right" width="120" />
 
 This is a package designed to implement color palettes inspired by the
-TV Show, book series and video games of The Witcher into `R` and
+TV Show, book series and video games *The Witcher* into `R` and
 `ggplot2`.  
 The packages draws some inspiration from the `gameofthrones`-package.  
 Most color palettes are inspired by the 3rd installation of the video
@@ -85,9 +85,6 @@ If `ggplot2` is available you’ll have access to the
 `scale_[colour|fill]_witcher()` functions:
 
 ``` r
-library(ggplot2)
-
-
 ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
   geom_hex() + coord_fixed() +
   scale_fill_witcher(option="Geralt") + theme_bw()
