@@ -84,6 +84,9 @@ functions:
 
 ``` r
 library(ggplot2)
+
+set.seed(1)
+
 ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
   geom_hex() + coord_fixed() +
   scale_fill_witcher(option="Geralt") + theme_bw()
