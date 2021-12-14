@@ -43,6 +43,11 @@ witcher_palettes <- list(
 )
 
 
+#' Expand list of palettes
+#'
+#' @keywords internal
+#'
+
 # Expand palette to accept contiuous scales or longer discrete scales
 complete_palette <- function(option, n = 3e3) {
   complete_col <- c()
@@ -52,6 +57,14 @@ complete_palette <- function(option, n = 3e3) {
   }
   return(complete_col)
 }
+
+
+#' make map of colors
+#'
+#' @importFrom grDevices colorRampPalette n2mfrow
+#' @importFrom graphics image par text
+#' @keywords internal
+#'
 
 # Build DF map
 make_map <- function(palettes, option_name) {
@@ -74,3 +87,5 @@ for (h in names(witcher_palettes)) {
 witcher.map <- map
 usethis::use_data(witcher.map, internal = TRUE, overwrite = TRUE)
 usethis::use_data(witcher_palettes, overwrite = TRUE)
+usethis::use_pipe(export = TRUE)
+utils::globalVariables(c("red", "green", "blue", "option_name"))

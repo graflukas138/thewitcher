@@ -25,7 +25,7 @@ witcher(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "Geralt")
 
 witcher_palette_names()
 
-witcher_colors(palettes = witcher_palettes())
+witcher_colors()
 }
 \arguments{
 \item{n}{The number of colors (\eqn{\ge 1}) to be in the palette.}

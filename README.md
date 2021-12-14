@@ -22,7 +22,7 @@ devtools::install_github("graflukas138/thewitcher")
 From CRAN:
 
 ``` r
-install.packages("theWitcher")
+install.packages("thewitcher")
 ```
 
 ## Palettes

@@ -1,4 +1,4 @@
-Package: theWitcher
+Package: thewitcher
 Title: The Witcher - Plot your data using color palettes inspired by the Witcher
 Version: 1.0.0
 Authors@R: 
@@ -13,11 +13,14 @@ Depends:
     R (>= 2.10)
 Imports:
     ggplot2 (>= 1.0.1),
+    dplyr,
     tidyverse,
     usethis,
     gridExtra,
-    MASS
+    MASS,
+    magrittr,
+    grDevices,
+    readr
 Suggests:
-    dplyr,
     covr
 LazyData: true

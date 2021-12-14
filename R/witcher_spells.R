@@ -283,7 +283,7 @@ witcher_palette_names <- function() names(witcher_palettes)
 #' @export
 
 
-witcher_colors <- function(palettes = witcher_palettes()) {
+witcher_colors <- function() {
   dims <- n2mfrow(length(witcher_palettes))
   oldpar <- par(mfrow = dims, mai = par('mai')/5)
   on.exit(par(oldpar))
