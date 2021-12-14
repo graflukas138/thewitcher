@@ -4,7 +4,10 @@
 # theWitcher <img src="man/figures/logo.png" align="right" width="120" />
 
 This is a package designed to implement color palettes inspired by the
-TV Show, book series and video games of The Witcher.
+TV Show, book series and video games of The Witcher. The packages draws
+some inspiration from the `gameofthrones`-package. Most color palettes
+are inspired by the 3rd installation of the video games: *The Witcher
+III - Wild Hunt*
 
 ## Installation
 
