@@ -1,6 +1,6 @@
 Package: theWitcher
 Title: Plot your data like a witcher
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: 
     person("Lukas", "Graf", , "graflukas57@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-9630-5615"))
@@ -19,7 +19,6 @@ Imports:
     gridExtra,
     MASS
 Suggests:
-    ggplot2,
     dplyr,
     covr
 LazyData: true

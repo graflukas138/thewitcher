@@ -104,7 +104,7 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
 geom_hex() + coord_fixed() +
 scale_fill_witcher(option="ciri") + theme_bw()
 
-#' ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
+ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
 geom_hex() + coord_fixed() +
 scale_fill_witcher(option="geralt") + theme_bw()
 
