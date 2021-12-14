@@ -79,7 +79,6 @@ image(volcano, col = pal)
 If `ggplot2` is available you'll have access to the `scale_[colour|fill]_witcher()` functions:
 
 ```{r, echo=F}
-
 set.seed(1)
 library(ggplot2)
 ```
