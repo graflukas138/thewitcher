@@ -270,13 +270,11 @@ scale_fill_witcher_d <- function(..., alpha = 1, begin = 0, end = 1,
 #'
 #' These functions gives access to the data underlying the palettes
 #'
-#' @aliases witcher_palette_names
 #' @export
 
 witcher_palette_names <- function() names(witcher_palettes)
 
 #' @rdname witcher_colors
-#' @aliases witcher_colors
 #' #' This is a simple function to show a gradient of the different palettes
 #'
 #' @param palettes One or more palette names to show
@@ -286,7 +284,6 @@ witcher_palette_names <- function() names(witcher_palettes)
 #' @importFrom graphics image par text
 #' @export
 #'
-#' @examples
 
 
 witcher_colors <- function(palettes = witcher_palettes()) {
