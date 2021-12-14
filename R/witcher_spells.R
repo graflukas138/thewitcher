@@ -146,6 +146,7 @@ scale_color_witcher <- function(..., alpha = 1, begin = 0, end = 1, direction = 
 #' @rdname scale_witcher
 #' @aliases scale_color_witcher
 #' @export
+#'
 scale_colour_witcher <- scale_color_witcher
 
 #' @rdname scale_witcher
@@ -211,18 +212,13 @@ witcher <- witcher
 #'
 #' @examples
 #' library(ggplot2)
+#' ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
+#' geom_hex() + coord_fixed() +
+#' scale_fill_witcher(option="ciri") + theme_bw()
 #'
-#' ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +
-#' geom_bar() +
-#' scale_fill_witcher(discrete = TRUE, option = "Geralt")
-#'
-#' ggplot(mtcars, aes(factor(gear), fill=factor(carb))) +
-#' geom_bar() +
-#' scale_fill_witcher(discrete = TRUE, option = "Yennefer")
-#'
-#' ggplot(mtcars, aes(x = mpg, y = disp, colour = hp)) +
-#' geom_point(size = 2) +
-#' scale_colour_witcher(option = "Ciri")
+#' #' ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
+#' geom_hex() + coord_fixed() +
+#' scale_fill_witcher(option="geralt") + theme_bw()
 #'
 #'
 #' @export
