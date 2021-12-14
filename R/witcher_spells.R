@@ -282,7 +282,13 @@ scale_fill_witcher_d <- function(..., alpha = 1, begin = 0, end = 1,
   )
 }
 
+#' @rdname witcher_palette_names
+#' @export
+
 witcher_palette_names <- function() names(witcher_palettes)
+
+#' @rdname witcher_colors
+#' @export
 
 witcher_colors <- function(palettes = witcher_palettes()) {
   dims <- n2mfrow(length(witcher_palettes))
