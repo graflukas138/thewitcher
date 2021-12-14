@@ -232,11 +232,11 @@ witcher <- witcher
 #'
 #' ggplot(mtcars, aes(factor(gear), fill=factor(carb))) +
 #' geom_bar() +
-#' scale_fill_witcher(discrete = TRUE, option = "Tully")
+#' scale_fill_witcher(discrete = TRUE, option = "Yennefer")
 #'
 #' ggplot(mtcars, aes(x = mpg, y = disp, colour = hp)) +
 #' geom_point(size = 2) +
-#' scale_colour_witcher(option = "Lannister")
+#' scale_colour_witcher(option = "Ciri")
 #'
 #'
 #' @export
@@ -265,12 +265,14 @@ scale_fill_witcher_d <- function(..., alpha = 1, begin = 0, end = 1,
   )
 }
 
-#' @rdname witcher_palette_names
+#' @rdname witcher
+#' @aliases witcher_palette_names
 #' @export
 
 witcher_palette_names <- function() names(witcher_palettes)
 
-#' @rdname witcher_colors
+#' @rdname witcher
+#' @aliases witcher_colors
 #' @importFrom grDevices n2mfrow
 #' @importFrom graphics image par text
 #' @export

@@ -10,13 +10,13 @@ A data frame containing all the colours used in the palette:
 \item V1: Red value
 \item V2: Green value
 \item V3: Blue value
-\item option: Refers to the characters of the world of the Witcher, or other colourmaps. It is intended to be a general option for choosing the specific colour palette.
+\item option: Refers to the characters of the world of the Witcher.
 }
 }
 \usage{
 witcher.map
 }
 \description{
-A dataset containing the colour palettes from the TV show 'The Witcher'.
+A dataset containing the colour palettes from the TV show, book series and video games of 'The Witcher'.
 }
 \keyword{datasets}

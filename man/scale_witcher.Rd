@@ -107,14 +107,11 @@ scale_fill_witcher(discrete = TRUE, option = "Geralt")
 
 ggplot(mtcars, aes(factor(gear), fill=factor(carb))) +
 geom_bar() +
-scale_fill_witcher(discrete = TRUE, option = "Tully")
+scale_fill_witcher(discrete = TRUE, option = "Yennefer")
 
 ggplot(mtcars, aes(x = mpg, y = disp, colour = hp)) +
 geom_point(size = 2) +
-scale_colour_witcher(option = "Lannister")
+scale_colour_witcher(option = "Ciri")
 
 
-}
-\author{
-Alejandro Jiménez Rico \email{aljrico@gmail.com}
 }

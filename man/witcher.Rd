@@ -4,6 +4,8 @@
 \alias{witcherMap}
 \alias{witcher}
 \alias{witcher_pal}
+\alias{witcher_palette_names}
+\alias{witcher_colors}
 \title{The Witcher Colour Map.}
 \usage{
 witcherMap(
@@ -20,6 +22,10 @@ witcher(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "Geralt")
 witcher_pal(alpha = 1, begin = 0, end = 1, direction = 1, option = "Geralt")
 
 witcher(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "Geralt")
+
+witcher_palette_names()
+
+witcher_colors(palettes = witcher_palettes())
 }
 \arguments{
 \item{n}{The number of colors (\eqn{\ge 1}) to be in the palette.}
@@ -42,6 +48,9 @@ codes. This can be used either to create a user-defined color palette for
 subsequent graphics by \code{palette(cv)}, a \code{col =} specification in
 graphics functions or in \code{par}.
 
+Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
+devices: see \code{\link[grDevices]{rgb}}.
+
 \code{witcherMap} returns a \code{n} lines data frame containing the
 red (\code{R}), green (\code{G}), blue (\code{B}) and alpha (\code{alpha})
 channels of \code{n} equally spaced colors along the 'The Witcher' colour map.
@@ -50,20 +59,6 @@ channels of \code{n} equally spaced colors along the 'The Witcher' colour map.
 \description{
 This function creates a vector of \code{n} equally spaced colors along the
 'witcher colour map'.
-}
-\details{
-\if{html}{Here are the color scales:
-
-  \out{<div style="text-align: center">}\figure{witcher-scales.png}{houses: style="width:750px;max-width:90\%;"}\out{</div>}
-
-  }
-\if{latex}{Here are the color scales:
-
-  \out{\begin{center}}\figure{witcher-scales.png}\out{\end{center}}
-  }
-
-Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
-devices: see \code{\link[grDevices]{rgb}}.
 }
 \examples{
 library(ggplot2)
@@ -79,7 +74,4 @@ ggplot(dat, aes(x = x, y = y)) +
 pal <- witcher(256, option = "Wildfire")
 image(volcano, col = pal)
 
-}
-\author{
-Alejandro Jiménez Rico \email{aljrico@gmail.com}, \href{https://aljrico.github.io}{Personal Blog}
 }
