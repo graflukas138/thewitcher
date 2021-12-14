@@ -3,6 +3,16 @@
 
 # theWitcher <img src="man/figures/logo.png" align="right" width="120" />
 
+<!-- badges: start -->
+
+[![cran
+version](http://www.r-pkg.org/badges/version/thewitcher)](https://cran.r-project.org/package=thewitcher)
+[![rstudio mirror per-month
+downloads](http://cranlogs.r-pkg.org/badges/thewitcher)](https://github.com/metacran/cranlogs.app)
+[![rstudio mirror total
+downloads](http://cranlogs.r-pkg.org/badges/grand-total/thewitcher?color=yellowgreen)](https://github.com/metacran/cranlogs.app)
+<!-- badges: end -->
+
 This is a package designed to implement color palettes inspired by the
 TV Show, book series and video games *The Witcher* into `R` and
 `ggplot2`.  
@@ -31,7 +41,7 @@ install.packages("thewitcher")
 with the `witcher_colors()` function:
 
 ``` r
-library(theWitcher)
+library(thewitcher)
 
 witcher_colors()
 ```
@@ -40,7 +50,7 @@ witcher_colors()
 
 # Usage
 
-An example of usage for the `theWitcher` - color scales. The default
+An example of usage for the `thewitcher` - color scales. The default
 option is Geralt.
 
 ``` r
