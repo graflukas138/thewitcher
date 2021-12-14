@@ -11,9 +11,17 @@ III - Wild Hunt*
 
 ## Installation
 
+From Github:
+
 ``` r
 # install.packages("devtools")
 devtools::install_github("graflukas138/thewitcher")
+```
+
+From CRAN:
+
+``` r
+install.packages("theWitcher")
 ```
 
 ## Palettes
@@ -27,7 +35,7 @@ library(theWitcher)
 witcher_colors()
 ```
 
-![](man/figures/README-unnamed-chunk-3-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-4-1.png)<!-- -->
 
 # Usage
 
@@ -39,7 +47,7 @@ pal <- witcher(255, option = "Geralt")
 image(volcano, col = pal)
 ```
 
-![](man/figures/README-unnamed-chunk-4-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-5-1.png)<!-- -->
 
 How about a plot that is inspired by a Witcher school?
 
@@ -48,7 +56,7 @@ pal <- witcher(255, option = "school_griffin")
 image(volcano, col = pal)
 ```
 
-![](man/figures/README-unnamed-chunk-5-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-6-1.png)<!-- -->
 
 Or a monster?
 
@@ -57,7 +65,7 @@ pal <- witcher(255, option = "necrophage")
 image(volcano, col = pal)
 ```
 
-![](man/figures/README-unnamed-chunk-6-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-7-1.png)<!-- -->
 
 Or a witcher sign?
 
@@ -66,7 +74,7 @@ pal <- witcher(255, option = "axi")
 image(volcano, col = pal)
 ```
 
-![](man/figures/README-unnamed-chunk-7-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-8-1.png)<!-- -->
 
 ## ggplot2
 
@@ -81,7 +89,7 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
   scale_fill_witcher(option="Geralt") + theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-8-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-9-1.png)<!-- -->
 
 ``` r
 ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
@@ -89,7 +97,7 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
   scale_fill_witcher(option="Ciri") + theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-9-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-10-1.png)<!-- -->
 
 ``` r
 ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
@@ -97,7 +105,7 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
   scale_fill_witcher(option="wildhunt") + theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-10-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-11-1.png)<!-- -->
 
 ``` r
 ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
@@ -105,4 +113,4 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
   scale_fill_witcher(option="leshen") + theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-11-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-12-1.png)<!-- -->
