@@ -91,7 +91,7 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
 ``` r
 ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
   geom_hex() + coord_fixed() +
-  scale_fill_witcher(option="Yennefer") + theme_bw()
+  scale_fill_witcher(option="wildhunt") + theme_bw()
 ```
 
 ![](man/figures/README-unnamed-chunk-10-1.png)<!-- -->
