@@ -1,0 +1,70 @@
+library(tidyverse)
+
+map <- list()
+
+# Define Palettes
+witcher_palettes <- list(
+  aard = c("#000000","#154d47", "goldenrod3", "goldenrod1"), #good
+  axi =  c("#000000", "#4e0002", "#9D0005", "darkgreen", "lightgreen"), #good
+  ciri = c("#000000", "#444444", "#60AA42", "#C4B92A", "#F6E8B1", "#FFFFF0"), #good
+  dandelion = c("#82B5C4", "#A9BC7E", "#D7C42A", "#CDA25C", "#C37E90"),
+  emhyr = c("#000000","#444444","#090A0C", "#591D18", "#800000", "goldenrod3", "goldenrod1"), #good
+  geralt =c("#000000", "#444444","#d3d3d3",  "goldenrod1"), #good
+  griffin = c("#142044", "#3454b4", "#FB7E00", "#FFA700"), # good
+  igni = c( "#B20000", "#ED4700","#EF7300","#FF9517","#F1B043"), #good
+  kaermorhen = c("#362204","#444444", "#739bd0", "#a0bbdf", "#d3d3d3"), #good
+  katakan = c("#000000", "#142044", "#3454b4", "#F0C75E", "#ECB939"), # good
+  leshen = c("#02060B", "#7f793c", "#565c33", "#472c0b", "#7e5522"), #good
+  necrophage = c( "#444444","#291D15", "#8C5A3C", "#966446", "#C88C6E", "#CC1100"),#good
+  nilfgaard = c("#000000", "#444444", "goldenrod3", "goldenrod1", "#C4B92A"), # good
+  olgierd = c("darkorchid1", "darkorchid4","dodgerblue3","darkturquoise","cyan" ), #good
+  quen = c("#444444","#291D15","#C9E043","#CEF007"), # good
+  redbaron = c("#660000", "#8B0000", "#800000", "#CC1100", "#DC143C"), #good
+  school_bear = c("darkgreen","#792427", "#545058", "#444444"), #good
+  school_cat = c("#966628", "#AAA549", "dodgerblue3","dodgerblue1"), #good
+  school_griffin = c("#000000", "#154d47", "#0e9688","goldenrod3", "goldenrod1"), #dope
+  school_manticore = c("#232D37", "#37414B", "#889999", "#AAB7AF", "#5D7850"), # good
+  school_viper = c("#6A2073","#3A005C", "#066908", "#07F00B","#474D47","#A6ADA6"), #good
+  school_wolf = c("#5C4000","#9c6849", "#735852", "#660000", "#8B0000"), #good
+  skellige = c("dodgerblue3","dodgerblue1", "#CC1100", "#DC143C", "#F2EAD8"), #good
+  temeria = c("#0527A1","dodgerblue3", "#800000", "#CC1100"), #good
+  toussaint = c("lightgreen","darkgreen", "#CA001B", "#F52156","dodgerblue3","darkturquoise"), #good
+  triss =c("#CA001B", "#F52156","dodgerblue3","darkturquoise"), #good
+  uma = c("#5C4000","#9c6849", "#8C5A3C", "#966446", "dodgerblue3","darkturquoise"),
+  wildhunt = c("#232D37", "#37414B","#739BD0", "#889999", "#AAB7AF"), #good
+  yennefer = c("#000000", "#444444", "#8800FF", "#9F97FC", "#CB99C9"), #good
+  yrden = c("#444444", "#8800FF", "#01480f", "#027218","#9F97FC") #good
+)
+
+
+# Expand palette to accept contiuous scales or longer discrete scales
+complete_palette <- function(option, n = 3e3) {
+  complete_col <- c()
+  for (i in 1:(length(option) - 1)) {
+    cols <- colorRampPalette(c(option[i], option[i + 1]))
+    complete_col <- c(complete_col, cols(n))
+  }
+  return(complete_col)
+}
+
+# Build DF map
+make_map <- function(palettes, option_name) {
+  palettes[[option_name]] %>%
+    complete_palette() %>%
+    grDevices::col2rgb() %>%
+    t() %>%
+    as.data.frame() %>%
+    dplyr::rename(V1 = red) %>%
+    dplyr::rename(V2 = green) %>%
+    dplyr::rename(V3 = blue) %>%
+    dplyr::mutate(option = option_name)
+}
+
+for (h in names(witcher_palettes)) {
+  df <- make_map(witcher_palettes, h)
+  map <- rbind(map, df)
+}
+
+witcher.map <- map
+usethis::use_data(witcher.map, internal = TRUE, overwrite = TRUE)
+usethis::use_data(witcher_palettes, overwrite = TRUE)
