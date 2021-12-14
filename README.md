@@ -114,3 +114,7 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
 ```
 
 ![](man/figures/README-unnamed-chunk-12-1.png)<!-- -->
+
+*“Evil is evil. Lesser, greater, middling… Makes no difference. The
+degree is arbitrary. The definition’s blurred. If I’m to choose between
+one evil and another… I’d rather not choose at all.”* - Geralt of Rivia
