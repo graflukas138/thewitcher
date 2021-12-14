@@ -48,9 +48,6 @@ codes. This can be used either to create a user-defined color palette for
 subsequent graphics by \code{palette(cv)}, a \code{col =} specification in
 graphics functions or in \code{par}.
 
-Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
-devices: see \code{\link[grDevices]{rgb}}.
-
 \code{witcherMap} returns a \code{n} lines data frame containing the
 red (\code{R}), green (\code{G}), blue (\code{B}) and alpha (\code{alpha})
 channels of \code{n} equally spaced colors along the 'The Witcher' colour map.
@@ -59,4 +56,24 @@ channels of \code{n} equally spaced colors along the 'The Witcher' colour map.
 \description{
 This function creates a vector of \code{n} equally spaced colors along the
 'witcher colour map'.
+}
+\examples{
+
+
+
+pal <- witcher(255, option = "Geralt")
+image(volcano, col = pal)
+
+library(ggplot2)
+
+ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
+geom_hex() + coord_fixed() +
+scale_fill_witcher(option="school_griffin") + theme_bw()
+
+}
+\author{
+Lukas Graf \email{graflukas57@gmail.com}
+
+Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
+devices: see \code{\link[grDevices]{rgb}}.
 }

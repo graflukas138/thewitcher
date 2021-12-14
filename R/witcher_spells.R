@@ -39,8 +39,23 @@
 #' subsequent graphics by \code{palette(cv)}, a \code{col =} specification in
 #' graphics functions or in \code{par}.
 #'
+#' @author Lukas Graf \email{graflukas57@@gmail.com}
+#'
 #' Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
 #' devices: see \code{\link[grDevices]{rgb}}.
+#'
+#'@examples
+#'
+#'
+#'
+#'pal <- witcher(255, option = "Geralt")
+#'image(volcano, col = pal)
+#'
+#'library(ggplot2)
+#'
+#'ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
+#'geom_hex() + coord_fixed() +
+#'scale_fill_witcher(option="school_griffin") + theme_bw()
 #'
 
 #' @rdname witcher
