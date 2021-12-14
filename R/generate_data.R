@@ -14,7 +14,7 @@ witcher_palettes <- list(
   igni = c( "#B20000", "#ED4700","#EF7300","#FF9517","#F1B043"),
   kaermorhen = c("#362204","#444444", "#739bd0", "#a0bbdf", "#d3d3d3"),
   katakan = c("#000000", "#142044", "#3454b4", "#F0C75E", "#ECB939"),
-  leshen = c("#02060B", "#7f793c", "#565c33", "#472c0b", "#7e5522"),
+  leshen = c("#0A0501","#3D1B02","#472c0b", "#7e5522", "#7f793c", "#565c33"),
   necrophage = c( "#444444","#291D15", "#8C5A3C", "#966446", "#C88C6E", "#CC1100"),
   nilfgaard = c("#000000", "#444444", "goldenrod3", "goldenrod1", "#C4B92A"),
   olgierd = c("darkorchid1", "darkorchid4","dodgerblue3","darkturquoise","cyan" ),
@@ -31,7 +31,7 @@ witcher_palettes <- list(
   toussaint = c("lightgreen","darkgreen", "#CA001B", "#F52156","dodgerblue3","darkturquoise"),
   triss =c("#CA001B", "#F52156","dodgerblue3","darkturquoise"),
   uma = c("#5C4000","#9c6849", "#8C5A3C", "#966446", "dodgerblue3","darkturquoise"),
-  wildhunt = c("#232D37", "#37414B","#739BD0", "#889999", "#AAB7AF"),
+  wildhunt = c("#232D37", "#37414B","#889999", "#AAB7AF","#739BD0"),
   yennefer = c("#000000", "#444444", "#8800FF", "#9F97FC", "#CB99C9"),
   yrden = c("#444444", "#8800FF", "#01480f", "#027218","#9F97FC")
 )
