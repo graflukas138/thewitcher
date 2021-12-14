@@ -248,12 +248,19 @@ scale_fill_witcher_d <- function(..., alpha = 1, begin = 0, end = 1,
 }
 
 #' @rdname witcher
+#' Show the different Witcher palettes
+#' This is a simple function to show the names of the palettes
+#' available in the `theWitcher` package
 #' @aliases witcher_palette_names
 #' @export
 
 witcher_palette_names <- function() names(witcher_palettes)
 
 #' @rdname witcher
+#'
+#' Show the different Witcher palettes
+#' This is a simple function to show a gradient of the different palettes
+#' available in the `theWitcher` package
 #' @aliases witcher_colors
 #' @export
 
