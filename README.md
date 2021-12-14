@@ -4,10 +4,11 @@
 # theWitcher <img src="man/figures/logo.png" align="right" width="120" />
 
 This is a package designed to implement color palettes inspired by the
-TV Show, book series and video games of The Witcher. The packages draws
-some inspiration from the `gameofthrones`-package. Most color palettes
-are inspired by the 3rd installation of the video games: *The Witcher
-III - Wild Hunt*
+TV Show, book series and video games of The Witcher into `R` and
+`ggplot2`.  
+The packages draws some inspiration from the `gameofthrones`-package.  
+Most color palettes are inspired by the 3rd installation of the video
+games: *The Witcher III - Wild Hunt*
 
 ## Installation
 
@@ -78,26 +79,18 @@ image(volcano, col = pal)
 
 ## ggplot2
 
-`theWitcher` provides color scales for use with `ggplot2`. If `ggplot2`
-is available you’ll have access to the `scale_[colour|fill]_witcher()`
-functions:
+`theWitcher` provides color scales and functions to use with
+`ggplot2`.  
+If `ggplot2` is available you’ll have access to the
+`scale_[colour|fill]_witcher()` functions:
 
 ``` r
 library(ggplot2)
 
-set.seed(1)
 
 ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
   geom_hex() + coord_fixed() +
   scale_fill_witcher(option="Geralt") + theme_bw()
-```
-
-![](man/figures/README-unnamed-chunk-9-1.png)<!-- -->
-
-``` r
-ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
-  geom_hex() + coord_fixed() +
-  scale_fill_witcher(option="Ciri") + theme_bw()
 ```
 
 ![](man/figures/README-unnamed-chunk-10-1.png)<!-- -->
@@ -105,7 +98,7 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
 ``` r
 ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
   geom_hex() + coord_fixed() +
-  scale_fill_witcher(option="wildhunt") + theme_bw()
+  scale_fill_witcher(option="Ciri") + theme_bw()
 ```
 
 ![](man/figures/README-unnamed-chunk-11-1.png)<!-- -->
@@ -113,10 +106,18 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
 ``` r
 ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
   geom_hex() + coord_fixed() +
-  scale_fill_witcher(option="leshen") + theme_bw()
+  scale_fill_witcher(option="wildhunt") + theme_bw()
 ```
 
 ![](man/figures/README-unnamed-chunk-12-1.png)<!-- -->
+
+``` r
+ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
+  geom_hex() + coord_fixed() +
+  scale_fill_witcher(option="leshen") + theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-13-1.png)<!-- -->
 
 *“Evil is evil. Lesser, greater, middling… Makes no difference. The
 degree is arbitrary. The definition’s blurred. If I’m to choose between
