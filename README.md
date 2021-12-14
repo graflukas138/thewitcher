@@ -29,7 +29,7 @@ From Github:
 devtools::install_github("graflukas138/thewitcher")
 ```
 
-From CRAN:
+From CRAN (yet to be released):
 
 ``` r
 install.packages("thewitcher")
