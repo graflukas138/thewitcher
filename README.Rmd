@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# theWitcher <img src="man/figures/logo.png" align="right" />
+# theWitcher <img src="man/figures/logo.png" align="right" width="120" />
 
 
 This is a package designed to implement color palettes inspired by the TV Show, book series and video games of The Witcher.
@@ -25,7 +25,7 @@ devtools::install_github("graflukas138/thewitcher")
 ```
 
 ## Palettes
-`theWitcher` provides 30 different palettes.An overview can be had with the `witcher_colors()`
+`theWitcher` provides 30 different palettes. An overview can be viewed with the `witcher_colors()`
 function:
 
 ```{r}
@@ -34,10 +34,40 @@ library(theWitcher)
 witcher_colors()
 ```
 
+# Usage
 
-## ggplot2 support
-`theWitcher` provides relevant scales for use with `ggplot2`. It only suggests 
-`ggplot2` in order to stay lightweight, but if `ggplot2` is available you'll 
+An example of usage for the `theWitcher` - color scales.
+The default option is Geralt.
+
+```{r}
+pal <- witcher(255, option = "Geralt")
+image(volcano, col = pal)
+```
+
+How about a plot that is inspired by a Witcher school?
+
+```{r}
+pal <- witcher(255, option = "school_griffin")
+image(volcano, col = pal)
+```
+
+Or a monster?
+
+```{r}
+pal <- witcher(255, option = "necrophage")
+image(volcano, col = pal)
+```
+
+Or a witcher sign?
+
+```{r}
+pal <- witcher(255, option = "axi")
+image(volcano, col = pal)
+```
+
+
+## ggplot2
+`theWitcher` provides color scales for use with `ggplot2`. If `ggplot2` is available you'll 
 have access to the `scale_[colour|fill]_witcher()` functions:
 
 ```{r, message=FALSE}
@@ -67,6 +97,6 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
 ```{r, message=FALSE}
 ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
   geom_hex() + coord_fixed() +
-  scale_fill_witcher(option="Emhyr") + theme_bw()
+  scale_fill_witcher(option="leshen") + theme_bw()
 ```
 
