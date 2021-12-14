@@ -59,7 +59,7 @@ image(volcano, col = pal)
 Or a witcher sign?
 
 ``` r
-pal <- witcher(255, option = "aard")
+pal <- witcher(255, option = "axi")
 image(volcano, col = pal)
 ```
 
