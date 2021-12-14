@@ -2,7 +2,7 @@ Package: theWitcher
 Title: The Witcher - Plot your data using color palettes inspired by the Witcher
 Version: 1.0.0
 Authors@R: 
-    person("Lukas", "Graf", , "graflukas57@gmail.com", role = c("aut", "cre"),
+    person("Lukas", "Graf", , "graflukas57@@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-9630-5615"))
 Description: Plot your data like a witcher using ggplot2 or base R.
 License: MIT + file LICENSE
