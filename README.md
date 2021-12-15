@@ -94,6 +94,8 @@ image(volcano, col = pal)
 If `ggplot2` is available you’ll have access to the
 `scale_[colour|fill]_witcher()` functions:
 
+### Continous data
+
 ``` r
 ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
   geom_hex() + coord_fixed() +
@@ -125,6 +127,32 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
 ```
 
 ![](man/figures/README-unnamed-chunk-13-1.png)<!-- -->
+
+### Discrete data
+
+Use `scale_fill_witcher_d()` to plot discrete data.
+
+``` r
+txsamp <- subset(txhousing, city %in%
+  c("Houston", "Fort Worth", "San Antonio", "Dallas", "Austin"))
+
+ggplot(txsamp, aes(x = median, fill = city)) +
+  geom_histogram(position = "dodge", binwidth = 15000)+ scale_fill_witcher_d(option = "katakan")+ theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-14-1.png)<!-- -->
+
+Order of colors can be reversed using `direction = -1`.
+
+``` r
+txsamp <- subset(txhousing, city %in%
+  c("Houston", "Fort Worth", "San Antonio", "Dallas", "Austin"))
+
+ggplot(txsamp, aes(x = median, fill = city)) +
+  geom_histogram(position = "dodge", binwidth = 15000)+ scale_fill_witcher_d(option = "katakan", direction = -1) + theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-15-1.png)<!-- -->
 
 *“Evil is evil. Lesser, greater, middling… Makes no difference. The
 degree is arbitrary. The definition’s blurred. If I’m to choose between

@@ -83,6 +83,8 @@ image(volcano, col = pal)
 `thewitcher` provides color scales and functions to use with `ggplot2`.  
 If `ggplot2` is available you'll have access to the `scale_[colour|fill]_witcher()` functions:
 
+### Continous data
+
 ```{r, echo=F}
 set.seed(1)
 library(ggplot2)
@@ -113,5 +115,29 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
   geom_hex() + coord_fixed() +
   scale_fill_witcher(option="leshen") + theme_bw()
 ```
+
+### Discrete data
+
+Use `scale_fill_witcher_d()` to plot discrete data.
+
+```{r, message=FALSE}
+txsamp <- subset(txhousing, city %in%
+  c("Houston", "Fort Worth", "San Antonio", "Dallas", "Austin"))
+
+ggplot(txsamp, aes(x = median, fill = city)) +
+  geom_histogram(position = "dodge", binwidth = 15000)+ scale_fill_witcher_d(option = "katakan")+ theme_bw()
+```
+
+Order of colors can be reversed using `direction = -1`.
+
+```{r, message=FALSE}
+txsamp <- subset(txhousing, city %in%
+  c("Houston", "Fort Worth", "San Antonio", "Dallas", "Austin"))
+
+ggplot(txsamp, aes(x = median, fill = city)) +
+  geom_histogram(position = "dodge", binwidth = 15000)+ scale_fill_witcher_d(option = "katakan", direction = -1) + theme_bw()
+```
+
+
 
  *"Evil is evil. Lesser, greater, middling... Makes no difference. The degree is arbitrary. The definition's blurred. If I'm to choose between one evil and another... I'd rather not choose at all."* - Geralt of Rivia
