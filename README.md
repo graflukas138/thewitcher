@@ -8,7 +8,7 @@
 [![cran
 version](https://www.r-pkg.org/badges/version/thewitcher)](https://cran.r-project.org/package=thewitcher)
 [![rstudio mirror per-month
-downloads](https://cranlogs.r-pkg.org/badges/thewitcher)](https://github.com/metacran/cranlogs.app)
+downloads](https://cranlogs.r-pkg.org/badges/thewitcher)](https://github.com/r-hub/cranlogs.app)
 [![rstudio mirror total
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/thewitcher?color=yellowgreen)](https://github.com/r-hub/cranlogs.app)
 <!-- badges: end -->
@@ -23,10 +23,10 @@ games: *The Witcher III - Wild Hunt*
 For questions or suggestions please contact me:
 
 Email: <graflukas57@gmail.com>
-<img src="C:\Users\grafluca\AppData\Local\Temp\RtmpKYCZwA\file29f871013898.png" style="height:1.4em" />
+<img src="C:\Users\grafluca\AppData\Local\Temp\Rtmp8iQqan\file41747cf37a31.png" style="height:1.4em" />
 
 Twitter: <https://twitter.com/graf_gruen>
-<img src="C:\Users\grafluca\AppData\Local\Temp\RtmpKYCZwA\file29f8bd27101.png" style="height:1.4em" />
+<img src="C:\Users\grafluca\AppData\Local\Temp\Rtmp8iQqan\file41746d8a42bb.png" style="height:1.4em" />
 
 ## Installation
 
