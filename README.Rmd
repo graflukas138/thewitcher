@@ -27,9 +27,9 @@ Most color palettes are inspired by the 3rd installation of the video games: *Th
 
 For questions or suggestions please contact me:
 
-Email: graflukas57@gmail.com [`r icon_style(simple_icons("gmail"), scale=2, fill="red")`](mailto:graflukas57@gmail.com)
+`r icon_style(simple_icons("gmail"), scale=2, fill="red")`: graflukas57@gmail.com 
 
-Twitter: https://twitter.com/graf_gruen [`r icon_style(simple_icons("twitter"),scale=2, fill="#1DA1F2")`](https://twitter.com/graf_gruen)
+`r icon_style(simple_icons("twitter"),scale=2, fill="#1DA1F2")`: https://twitter.com/graf_gruen 
 
 ## Installation
 

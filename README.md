@@ -29,11 +29,11 @@ games: *The Witcher III - Wild Hunt*
 
 For questions or suggestions please contact me:
 
-Email: <graflukas57@gmail.com>
-[<img src="C:\Users\grafluca\AppData\Local\Temp\RtmpojDs1I\file4130173d26cf.png" style="height:1.4em" />](mailto:graflukas57@gmail.com)
+<img src="C:\Users\grafluca\AppData\Local\Temp\RtmpQl0OqE\file4a41c6b5850.png" style="height:1.4em" />:
+<graflukas57@gmail.com>
 
-Twitter: <https://twitter.com/graf_gruen>
-[<img src="C:\Users\grafluca\AppData\Local\Temp\RtmpojDs1I\file41301a11173d.png" style="height:1.4em" />](https://twitter.com/graf_gruen)
+<img src="C:\Users\grafluca\AppData\Local\Temp\RtmpQl0OqE\file4a475971c6b.png" style="height:1.4em" />:
+<https://twitter.com/graf_gruen>
 
 ## Installation
 
