@@ -10,6 +10,7 @@ knitr::opts_chunk$set(
   comment = "#>",
   fig.path = "man/figures/README-"
 )
+library(icons)
 ```
 
 # thewitcher <img src="man/figures/logo.png" align="right" width="120" />
@@ -22,7 +23,13 @@ knitr::opts_chunk$set(
 
 This is a package designed to implement color palettes inspired by the TV Show, book series and video games *The Witcher* into `R` and `ggplot2`.  
 The package draws some inspiration from the `gameofthrones`-package.  
-Most color palettes are inspired by the 3rd installation of the video games: *The Witcher III - Wild Hunt* 
+Most color palettes are inspired by the 3rd installation of the video games: *The Witcher III - Wild Hunt*
+
+For questions or suggestions please contact me:
+
+Email: [`r icon_style(simple_icons("gmail"), scale=2, fill="red")`](mailto:graflukas57@gmail.com)
+
+Twitter: [`r icon_style(simple_icons("twitter"),scale=2, fill="#1DA1F2")`](https://twitter.com/graf_gruen)
 
 ## Installation
 

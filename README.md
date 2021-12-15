@@ -1,6 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+    ## -- Installed icons ----------------------------------------------- icon 0.2.0 --
+
+    ## x ionicons                   x google_material       
+    ## v academicons     1.9.1      x feather_icons         
+    ## v simple_icons    6.2.0      x octicons              
+    ## v bioicons        1.0.0      v fontawesome     5.15.4
+
 # thewitcher <img src="man/figures/logo.png" align="right" width="120" />
 
 <!-- badges: start -->
@@ -19,6 +26,14 @@ TV Show, book series and video games *The Witcher* into `R` and
 The package draws some inspiration from the `gameofthrones`-package.  
 Most color palettes are inspired by the 3rd installation of the video
 games: *The Witcher III - Wild Hunt*
+
+For questions or suggestions please contact me:
+
+Email:
+[<img src="C:\Users\grafluca\AppData\Local\Temp\RtmpIRdsbv\file43845191f0d.png" style="height:1.4em" />](mailto:graflukas57@gmail.com)
+
+Twitter:
+[<img src="C:\Users\grafluca\AppData\Local\Temp\RtmpIRdsbv\file43836e14519.png" style="height:1.4em" />](https://twitter.com/graf_gruen)
 
 ## Installation
 
