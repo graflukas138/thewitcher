@@ -4,7 +4,7 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, message=FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -27,9 +27,9 @@ Most color palettes are inspired by the 3rd installation of the video games: *Th
 
 For questions or suggestions please contact me:
 
-`r icon_style(simple_icons("gmail"), scale=2, fill="red")`: graflukas57@gmail.com 
+Email: graflukas57@gmail.com `r icon_style(simple_icons("gmail"), scale=2, fill="red")`
 
-`r icon_style(simple_icons("twitter"),scale=2, fill="#1DA1F2")`: https://twitter.com/graf_gruen 
+Twitter: https://twitter.com/graf_gruen `r icon_style(simple_icons("twitter"),scale=2, fill="#1DA1F2")`
 
 ## Installation
 

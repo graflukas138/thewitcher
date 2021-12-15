@@ -1,13 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-    ## -- Installed icons ----------------------------------------------- icon 0.2.0 --
-
-    ## x ionicons                   x google_material       
-    ## v academicons     1.9.1      x feather_icons         
-    ## v simple_icons    6.2.0      x octicons              
-    ## v bioicons        1.0.0      v fontawesome     5.15.4
-
 # thewitcher <img src="man/figures/logo.png" align="right" width="120" />
 
 <!-- badges: start -->
@@ -29,11 +22,11 @@ games: *The Witcher III - Wild Hunt*
 
 For questions or suggestions please contact me:
 
-<img src="C:\Users\grafluca\AppData\Local\Temp\RtmpQl0OqE\file4a41c6b5850.png" style="height:1.4em" />:
-<graflukas57@gmail.com>
+Email: <graflukas57@gmail.com>
+<img src="C:\Users\grafluca\AppData\Local\Temp\Rtmp0AEtYa\file3b806af81caf.png" style="height:1.4em" />
 
-<img src="C:\Users\grafluca\AppData\Local\Temp\RtmpQl0OqE\file4a475971c6b.png" style="height:1.4em" />:
-<https://twitter.com/graf_gruen>
+Twitter: <https://twitter.com/graf_gruen>
+<img src="C:\Users\grafluca\AppData\Local\Temp\Rtmp0AEtYa\file3b8032846af8.png" style="height:1.4em" />
 
 ## Installation
 
