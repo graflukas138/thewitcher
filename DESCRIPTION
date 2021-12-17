@@ -4,7 +4,7 @@ Version: 1.0.0
 Authors@R: 
     person("Lukas", "Graf", , "graflukas57@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-9630-5615"))
-Description: Plot your data using color palettes for `ggplot2` inspired by the TV show, book series and video games "The Witcher".
+Description: Plot your data using color palettes for 'ggplot2' inspired by the TV show, book series and video games "The Witcher".
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

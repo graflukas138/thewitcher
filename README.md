@@ -23,10 +23,10 @@ games: *The Witcher III - Wild Hunt*
 For questions or suggestions please contact me:
 
 Email: <graflukas57@gmail.com>
-<img src="C:\Users\grafluca\AppData\Local\Temp\Rtmp8iQqan\file41747cf37a31.png" style="height:1.4em" />
+<img src="C:\Users\grafluca\AppData\Local\Temp\RtmpwbNpIP\file7787ed71657.png" style="height:1.4em" />
 
 Twitter: <https://twitter.com/graf_gruen>
-<img src="C:\Users\grafluca\AppData\Local\Temp\Rtmp8iQqan\file41746d8a42bb.png" style="height:1.4em" />
+<img src="C:\Users\grafluca\AppData\Local\Temp\RtmpwbNpIP\file7785ff7ed7.png" style="height:1.4em" />
 
 ## Installation
 
@@ -37,7 +37,7 @@ From Github:
 devtools::install_github("graflukas138/thewitcher")
 ```
 
-From CRAN (yet to be released):
+From CRAN:
 
 ``` r
 install.packages("thewitcher")

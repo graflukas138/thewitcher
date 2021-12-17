@@ -39,7 +39,7 @@ From Github:
 devtools::install_github("graflukas138/thewitcher")
 ```
 
-From CRAN (yet to be released):
+From CRAN:
 ```{r, eval=FALSE}
 install.packages("thewitcher")
 ```
