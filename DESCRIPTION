@@ -1,6 +1,6 @@
 Package: thewitcher
 Title: Palettes Inspired by the TV Show "The Witcher"
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: 
     person("Lukas", "Graf", , "graflukas57@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-9630-5615"))
