@@ -28,6 +28,7 @@ witcher_palettes <- list(
   olgierd = c("darkorchid1", "darkorchid4","dodgerblue3","darkturquoise","cyan" ),
   quen = c("#444444","#291D15","#C9E043","#CEF007"),
   redbaron = c("#660000", "#8B0000", "#800000", "#CC1100", "#DC143C"),
+  roche = c("#0b5394","#2d7fc9", "#6fa8dc", "#C4B92A", "#e7d704"),
   school_bear = c("darkgreen","#792427", "#545058", "#444444"),
   school_cat = c("#966628", "#AAA549", "dodgerblue3","dodgerblue1"),
   school_griffin = c("#12141F", "#154d47", "#0e9688","goldenrod3", "goldenrod1"),
