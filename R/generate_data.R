@@ -33,6 +33,7 @@ witcher_palettes <- list(
   school_bear = c("darkgreen","#792427", "#545058", "#444444"),
   school_cat = c("#966628", "#AAA549", "dodgerblue3","dodgerblue1"),
   school_griffin = c("#12141F", "#154d47", "#0e9688","goldenrod3", "goldenrod1"),
+  school_griffin2 =c("#154d47", "#0e9688","goldenrod3", "goldenrod1"),
   school_manticore = c("#232D37", "#37414B", "#889999", "#AAB7AF", "#5D7850"),
   school_viper = c("#6A2073","#3A005C", "#066908", "#07F00B","#474D47","#A6ADA6"),
   school_wolf = c("#5C4000","#9c6849", "#735852", "#660000", "#8B0000"),
