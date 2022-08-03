@@ -17,7 +17,7 @@ witcher_palettes <- list(
   emhyr = c("#031717","#444444", "#591D18", "#800000", "goldenrod3", "goldenrod1"),
   francesca = c("#9f2f38", "#ea7b74","goldenrod3", "goldenrod1"),
   geralt =c("#000000", "#444444","#d3d3d3",  "goldenrod1"),
-  griffin = c("#142044", "#3454b4", "#FB7E00", "#FFA700"),
+  griffin = c("#3454b4", "#FB7E00", "#FFA700"),
   gwent = c("#338a0d", "#5b9e32", "#60AA42", "#C4B92A", "#e7d704"),
   igni = c( "#B20000", "#ED4700","#EF7300","#FF9517","#F1B043"),
   kaermorhen = c("#362204","#444444", "#739bd0", "#a0bbdf", "#d3d3d3"),
